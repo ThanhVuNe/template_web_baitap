@@ -12,12 +12,17 @@
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark position-fixed" style="top:0; left:0; right: 0; z-index: 1000; height: 70px;">
         <div class="container">
             <!-- Left Image (Logo) -->
-            <a class="navbar-brand" href="home.html">
-                <img src="https://chantroisangtao.vn/wp-content/uploads/2020/04/logo-2.png" alt="Logo" width="100">
+            <a class="navbar-brand" href="#">
+                <img class="img-header" src="https://chantroisangtao.vn/wp-content/uploads/2020/04/logo-2.png" alt="Logo" width="100">
             </a>
-
+    
+            <!-- Add the menu button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
             <!-- Centered Categories -->
-            <div class="navbar-collapse justify-content-center">
+            <div class="navbar-collapse collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="home.html">Sử thi</a>
@@ -36,7 +41,7 @@
                     </li>
                 </ul>
             </div>
-
+    
             <!-- Right Login -->
             <div class="navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
@@ -56,7 +61,7 @@
             <h1 class="text-center text-danger font-weight-bold mb-4">Bài tập trắc nghiệm Chiến thắng Mtao Mxây</h1>
             <div id="timer">Thời gian còn lại: 15:00</div>
 
-            <form id="quiz-form" action="result.html" method="POST">
+            <form id="quiz-form" action="result.html" method="GET">
                 <!-- Câu 1 -->
                 <div class="question">
                     <p>Câu 1: Hành động nào của Đăm Săn thể hiện tính cộng đồng?</p>
@@ -259,7 +264,7 @@
                 <!-- Thêm các câu hỏi còn lại tương tự -->
         
                 <div class="submit-button mt-3 mb-3 text-center">
-                    <input class="btn btn-danger" type="submit" value="Nộp bài">
+                    <input onclick="return confirm('Bạn có chắc muốn nộp bài')" class="btn btn-danger" type="submit" value="Nộp bài">
                 </div>
             </form>
         </div>

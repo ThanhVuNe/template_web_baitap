@@ -81,14 +81,20 @@ main {
 
 
 
-
-
-
-
 @media (max-width: 768px) {
     /* Điều chỉnh bố trí cho màn hình nhỏ hơn */
     .product {
         width: 100%; /* Hiển thị sản phẩm theo cột trên màn hình nhỏ */
+    }
+    .img-header {
+        width: 50px;
+        height: 50px;
+    }
+    .navbar-nav {
+        background-color: #343a40!important;
+    }
+    .navbar-nav .nav-link{
+        padding-left: 20px;
     }
 }
 
