@@ -1,0 +1,16 @@
+.question{
+    margin-bottom: 20px;
+}
+
+/* CSS */
+#timer {
+    position: fixed;
+    top: 200px; /* Khoảng cách từ phía trên của trình duyệt */
+    right: 10px; /* Khoảng cách từ phía phải của trình duyệt */
+    background-color: #fff; /* Màu nền của thời gian */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Để đảm bảo thời gian luôn hiển thị phía trên nội dung */
+}
